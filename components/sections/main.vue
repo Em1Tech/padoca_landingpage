@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-cover bg-left bg-['/img/padoca-main.png']">
+  <div class="bg-cover bg-left bg-mainpage">
     <div class="container mx-auto md:h-[96vh]">
       <div class="flex flex-col text-white justify-center md:h-96 mx-4">
         <p class="uppercase text-4xl md:text-6xl font-bold py-4">{{ $t("YOU_ARE_WELCOME") }}</p>
