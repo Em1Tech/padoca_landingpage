@@ -4,7 +4,7 @@ export default {
    "ABOUT_US": "About Us",
    "PORTUGUESE": "Portuguese",
    "ENGLISH": "English",
-   "KNOW_MORE_ABOUT_US": "Know more about us",
+   "A_LITTLE_BIT_ABOUT_OUR_HISTORY": "A little bit about our History",
    "WORK_WITH_US": "Work with us",
    "ABOUT_US_TEXT": "Since 2019, we are pleased to offer a delicious combination of coxinhas, tapiocas and coffees every day. At Padoca, we bring you the taste and essence of Brazil. Our coxinhas are made with selected ingredients, generated in a crispy dough and a juicy filling that will conquer you. Whether you're looking for a quick snack or a satisfying meal, our tapiocas are perfect. Made with autonomous tapioca gum, we offer a variety of fillings that please all palates. To accompany these delicacies, our selection of specialty coffees will surprise drink lovers. From traditional espresso to unique creations, we are here to satisfy your craving for good coffee. Padoca is not only a place to enjoy Brazilian food and drink, but also a welcoming environment that celebrates Brazilian culture and hospitality. Our friendly and attentive staff is ready to welcome you with open arms. Visit us in Padoca and immerse yourself in a unique gastronomic experience. We look forward to sharing a little piece of Brazil with you!",
    "COME_TO_PADOCA": "#ComeToPadoca",

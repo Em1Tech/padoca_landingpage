@@ -7,7 +7,7 @@
             {{ $t("ABOUT_US") }}
           </div>
           <div class="font-bold text-2xl uppercase text-[#583625]">
-            {{ $t("KNOW_MORE_ABOUT_US") }}
+            {{ $t("A_LITTLE_BIT_ABOUT_OUR_HISTORY") }}
           </div>
         </div>
       </div>
@@ -15,8 +15,8 @@
         <div class="md:w-1/3">
           <img class="" src="/img/founders.png" />
         </div>
-        <div class="md:w-2/3 flex flex-col justify-between">
-          <div class="mx-5">
+        <div class="md:w-2/3 flex flex-col justify-between mx-5">
+          <div class="">
             <div class="font-bold text-2xl text-[#583625] tracking-wide my-2">
               {{ $t("COME_TO_PADOCA") }}
             </div>
