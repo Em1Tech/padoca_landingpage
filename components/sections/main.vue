@@ -28,7 +28,7 @@ export default {
       options: [
         {
           image: "/img/tapioca.png",
-          title: "ASK_FOR_YOU",
+          title: "ORDER_NOW",
           link: "#",
           comments: "PICKS_DELIVERY"
         },

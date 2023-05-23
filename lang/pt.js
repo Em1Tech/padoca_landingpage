@@ -13,7 +13,7 @@ export default {
    "OPEN_HOURS": "Horário de Funcionamento",
    "PICKS_DELIVERY": "Retirada & Entrega",
    "CAKES_KITS": "Bolos & Kits",
-   "ASK_FOR_YOU": "Peça para Você",
+   "ORDER_NOW": "Peça Agora",
    "ASK_FOR_PARTY": "Peça para Festas",
    "YOU_ARE_WELCOME": "Seja bem vindo(a)",
    "HOW_ABOUT_TRYING_SOMETHING_NEW_TODAY": "Que tal experimentar algo novo hoje?"
