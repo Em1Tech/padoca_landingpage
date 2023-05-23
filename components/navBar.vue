@@ -12,7 +12,7 @@
           <img
             src="@/assets/img/padoca-logo.png"
             alt="padoca"
-            class="w-full h-14 mr-2"
+            class="w-36 h-14 mr-2"
           />
         </a>
         <img
