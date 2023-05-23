@@ -56,7 +56,7 @@ export default {
   methods: {
     changeCountry() {
       if (this.$i18n.locale === `pt`) {
-        this.flag = `https://hatscripts.github.io/circle-flags/flags/us.svg`;
+        this.flag = `https://hatscripts.github.io/circle-flags/flags/ie.svg`;
         this.$i18n.locale = "en";
       } else {
         this.flag = `https://hatscripts.github.io/circle-flags/flags/br.svg`;
@@ -66,7 +66,7 @@ export default {
   },
   data() {
     return {
-      flag: `https://hatscripts.github.io/circle-flags/flags/us.svg`,
+      flag: `https://hatscripts.github.io/circle-flags/flags/ie.svg`,
       toggleNav: false,
       showMenu: false,
       items: [
