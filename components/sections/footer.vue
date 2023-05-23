@@ -79,15 +79,15 @@
                 <path d="M12 7v5"></path>
               </svg>
               <div>
-                <p class="font-bold">Mon-Fri: 8:30am-7:00pm</p>
-                <p class="font-bold">Weekend: 9:00am-7:00pm</p>
+                <p class="font-semibold">Mon-Fri: 8:30am-7:00pm</p>
+                <p class="font-semibold">Weekend: 9:00am-7:00pm</p>
               </div>
             </div>
           </div>
         </div>
         <div>
           <div class="flex flex-col justify-center text-[#583625]">
-            <p class="font-bold text-xl mb-4">{{ $t("WHERE_WE_ARE") }}</p>
+            <p class="font-semibold text-xl mb-4">{{ $t("WHERE_WE_ARE") }}</p>
             <div class="flex gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -115,7 +115,7 @@
           </div>
         </div>
       </div>
-      <div class="my-10 text-[#583625] text-center font-bold">
+      <div class="my-10 text-[#583625] text-center font-semibold">
         ©2019 - {{ year }} Padoca |
         <a class="text-em1-orange" href="https://em1.tech/" target="_blank">
           Developed by Em1Tech
