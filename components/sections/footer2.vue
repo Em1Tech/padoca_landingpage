@@ -1,23 +1,39 @@
 <template>
   <div class="bg-[#ffffff] text-white container mx-auto">
-    <div class="flex flex-col md:flex-row justify-between mt-10">
+    <div>
       <div
-        class="flex text-[#583625] self-start justify-between py-4 mx-4"
+        class="flex flex-col md:flex-row text-[#583625] self-start justify-between md:py-10 py-4 mx-4"
       >
-        <div class="flex flex-col justify-center items-center">
-          <img
-            src="@/assets/img/padoca-logo.png"
-            alt="padoca"
-            class="mr-2 md:h-20 self-start "
-          />
-          <div class="flex gap-2 my-4 ">
-            <element-button> Fale Conosco </element-button>
-            <element-outlined-button> Nosso Cardapio </element-outlined-button>
-          </div>
-          <div class="flex gap-4  ml-2">
-            <div
-              class="rounded-full bg-[#E8E8E8] h-10 w-10 flex justify-center items-center"
-            >
+        <!-- not in mobile -->
+        <img
+          src="@/assets/img/padoca-logo.png"
+          alt="padoca"
+          class="mr-2 md:h-20 self-start hidden md:block"
+        />
+        <div class="flex flex-col justify-center">
+          <p class="font-bold text-xl mb-4">{{ $t("SOCIAL_NETWORK") }}</p>
+          <div class="flex md:flex-col gap-3">
+            <span class="flex items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ml-12"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="#583625"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                ></path>
+              </svg>
+              <p class="font-medium">Facebook</p>
+            </span>
+            <span class="flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-brand-instagram"
@@ -37,32 +53,10 @@
                 <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
                 <path d="M16.5 7.5l0 .01"></path>
               </svg>
-            </div>
-            <div
-              class="rounded-full bg-[#E8E8E8] h-10 w-10 flex justify-center items-center"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-brand-facebook"
-                width="32"
-                height="32"
-                viewBox="0 0 24 24"
-                stroke-width="2"
-                stroke="#583625"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path
-                  d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
-                ></path>
-              </svg>
-            </div>
+              <p class="font-medium">Instagram</p>
+            </span>
           </div>
         </div>
-      </div>
-      <div>
         <div class="flex flex-col justify-center text-[#583625]">
           <p class="font-bold text-xl mb-4">{{ $t("OPEN_HOURS") }}</p>
           <div class="flex gap-2">
@@ -90,11 +84,12 @@
           </div>
         </div>
         <div>
-          <div class="flex flex-col text-[#583625]">
+          <div class="flex flex-col justify-start text-[#583625]">
             <p class="font-semibold text-xl mb-4">{{ $t("WHERE_WE_ARE") }}</p>
             <div class="flex gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
+                class="ml-12"
                 width="32"
                 height="32"
                 viewBox="0 0 24 24"
@@ -110,31 +105,23 @@
                   d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
                 ></path>
               </svg>
-              <div class="font-medium">
-                <p>64, Capel Street</p>
-                <p>Dublin | Ireland, D01 CX79</p>
+              <div>
+                <p class="font-medium">64, Capel Street</p>
+                <p class="font-medium">Dublin | Ireland, D01 CX79</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="linha"></div>
-    <div class="text-[#9F9F9F] mb-4">
-      ©2019 - {{ year }} Padoca |
-      <a class="text-em1-orange" href="https://em1.tech/" target="_blank">
-        Developed by Em1Tech
-      </a>
+      <div class="my-10 text-[#583625] text-center font-semibold">
+        ©2019 - {{ year }} Padoca |
+        <a class="text-em1-orange" href="https://em1.tech/" target="_blank">
+          Developed by Em1Tech
+        </a>
+      </div>
     </div>
   </div>
 </template>
-
-<style scoped>
-.linha {
-  border: 2px solid #eeeeee;
-  transform: matrix(1, 0, 0, 1, 0, 0);
-}
-</style>
 
 <script>
 export default defineComponent({
