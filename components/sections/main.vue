@@ -7,7 +7,7 @@
       </div>
 
       <div class="flex flex-col md:flex-row justify-around items-center gap-2 my-4 md:my-2">
-        <div class="w-[330px] md:w-[330px] cursor-pointer" v-for="option in options" :key="option">
+        <div class="w-[330px] md:w-[330px] cursor-pointer" v-for="option in options" :key="option" @click="resolveLink(option.link)">
           <img :src="option.image" alt="" />
           <button
             class="bg-[#ffc301] uppercase text-[#2E2E2E] w-full py-4 font-bold text-2xl flex flex-col items-center"
@@ -21,25 +21,28 @@
   </div>
 </template>
 
+
 <script>
-export default {
-  data() {
-    return {
-      options: [
+export default defineComponent({
+  async setup() {
+    const options = [
         {
           image: "/img/tapioca.png",
           title: "ORDER_NOW",
-          link: "#",
+          link: "https://my.flipdish.com/padoca/",
           comments: "PICKS_DELIVERY"
         },
         {
           image: "/img/party.png",
           title: "ASK_FOR_PARTY",
-          link: "#",
+          link: "https://www.checktime.ie/en/store/padoca/1489057",
           comments: "CAKES_KITS"
         },
-      ],
-    };
+      ];
+    function resolveLink(url) {
+      window.open(url, "_blank");
+    }
+    return { options, resolveLink };
   },
-};
+});
 </script>

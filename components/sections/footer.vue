@@ -1,22 +1,35 @@
 <template>
   <div class="bg-[#ffffff] text-white container mx-auto">
-    <div class="flex flex-col md:flex-row justify-between mt-10">
+    <div class="flex flex-col md:flex-row justify-between items-center mt-10">
       <div
-        class="flex text-[#583625] self-start justify-between py-4 mx-4"
+        class="flex text-[#583625] justify-between self-center md:self-start py-4 mx-4"
       >
-        <div class="flex flex-col justify-center items-center">
+        <div
+          class="flex flex-col justify-center md:justify-start items-center md:items-start"
+        >
           <img
             src="@/assets/img/padoca-logo.png"
             alt="padoca"
-            class="mr-2 md:h-20 self-start "
+            class="mr-2 md:h-20 self-start"
           />
-          <div class="flex gap-2 my-4 ">
-            <element-button> Fale Conosco </element-button>
-            <element-outlined-button> Nosso Cardapio </element-outlined-button>
+          <div class="flex gap-2 my-4">
+            <element-button
+              @click="resolveLink('https://www.instagram.com/padoca_dublin')"
+            >
+              {{ $t("TALK_WITH_US") }}
+            </element-button>
+            <element-outlined-button
+              @click="
+                resolveLink('https://www.facebook.com/PadocaBakeryDublin')
+              "
+            >
+              {{ $t("WORK_WITH_US") }}
+            </element-outlined-button>
           </div>
-          <div class="flex gap-4  ml-2">
+          <div class="flex gap-4 ml-2">
             <div
-              class="rounded-full bg-[#E8E8E8] h-10 w-10 flex justify-center items-center"
+              class="rounded-full bg-[#E8E8E8] h-10 w-10 flex justify-center items-center cursor-pointer"
+              @click="resolveLink('https://www.instagram.com/padoca_dublin/')"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +52,10 @@
               </svg>
             </div>
             <div
-              class="rounded-full bg-[#E8E8E8] h-10 w-10 flex justify-center items-center"
+              class="rounded-full bg-[#E8E8E8] h-10 w-10 flex justify-center items-center cursor-pointer"
+              @click="
+                resolveLink('https://www.facebook.com/PadocaBakeryDublin')
+              "
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +78,7 @@
           </div>
         </div>
       </div>
-      <div>
+      <div class="mb-8">
         <div class="flex flex-col justify-center text-[#583625]">
           <p class="font-bold text-xl mb-4">{{ $t("OPEN_HOURS") }}</p>
           <div class="flex gap-2">
@@ -84,13 +100,20 @@
               <path d="M12 7v5"></path>
             </svg>
             <div class="font-medium">
-              <p>Mon-Fri: 8:30am-7:00pm</p>
-              <p>Weekend: 9:00am-7:00pm</p>
+              <p>{{ $t("WEEKDAYS") }}: 8:30am-7:00pm</p>
+              <p>{{ $t("WEEKEND") }}: 9:00am-7:00pm</p>
             </div>
           </div>
         </div>
         <div>
-          <div class="flex flex-col text-[#583625]">
+          <div
+            class="flex flex-col text-[#583625] cursor-pointer md:mt-2 "
+            @click="
+              resolveLink(
+                'https://www.google.com.br/maps/place/Padoca+Dublin+-+Brazilian+food/@53.277199,-6.4941019,10.92z/data=!4m8!1m2!2m1!1s64+Capel+St+Rotunda!3m4!1s0x48670fc1ed335707:0xf610eb58b59aa198!8m2!3d53.3499159!4d-6.2691591'
+              )
+            "
+          >
             <p class="font-semibold text-xl mb-4">{{ $t("WHERE_WE_ARE") }}</p>
             <div class="flex gap-2">
               <svg
@@ -119,22 +142,22 @@
         </div>
       </div>
     </div>
-    <div class="linha"></div>
-    <div class="text-[#9F9F9F] mb-4">
-      ©2019 - {{ year }} Padoca |
-      <a class="text-em1-orange" href="https://em1.tech/" target="_blank">
-        Developed by Em1Tech
+    <div class="mx-auto border-2 border-[#EABA83]"></div>
+    <div class="text-[#9E7D58] my-5 flex justify-center gap-1">
+      ©2019 - {{ year }} Padoca
+      <a class="text-em1-orange cursor-pointer" @click="resolveLink('https://em1.tech/')">
+        | Developed by Em1Tech
       </a>
     </div>
   </div>
 </template>
 
-<style scoped>
+<!-- <style scoped>
 .linha {
   border: 2px solid #eeeeee;
   transform: matrix(1, 0, 0, 1, 0, 0);
-}
-</style>
+} 
+</style> -->
 
 <script>
 export default defineComponent({
