@@ -1,8 +1,7 @@
 <template>
-  <div class="bg-white bg-opacity-90 w-screen md:w-full">
+  <div class="bg-opacity-90 md:w-full z-[1] w-[1000px] m-auto">
     <nav
-      class="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center  "
-      fixed
+      class="container py-[40px] mx-auto md:flex md:justify-between md:items-center"
     >
       <div class="flex items-center justify-between md:w-screen">
         <a
@@ -15,39 +14,24 @@
             class="w-36 h-14 mr-2"
           />
         </a>
-        <img
+
+        <div class="z-[2]">
+          <ul class="flex gap-[55px] text-[20px]">
+            <li class="text-[#7A4E1D]">Home</li>
+            <!-- <li class="text-[#7A4E1D]">Menu</li> -->
+            <!-- <li class="text-[#7A4E1D]">Find us</li> -->
+            <li class="text-[#7A4E1D]">About</li>
+            <!-- <li class="text-[#7A4E1D]">I W</li> -->
+            <!-- <li class="text-[#7A4E1D]">PT-BR</li> -->
+          </ul>
+        </div>
+        <!-- <img
           :src="flag"
           width="48"
           @click="changeCountry"
           class="cursor-pointer"
-        />
-
-        <!-- Mobile menu button -->
-        <!-- <div @click="showMenu = !showMenu" class="flex md:hidden">
-          <button type="button">
-            <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
-              <path
-                fill-rule="evenodd"
-                d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-              ></path>
-            </svg>
-          </button>
-        </div> -->
+        /> -->
       </div>
-
-      <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-      <!-- <ul
-        :class="showMenu ? 'flex' : 'hidden'"
-        class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0"
-      >
-        <li v-for="(item, index) in items" :key="index">
-          <a :href="item.link">
-            <div class="text-lg font-bold">
-              {{ $t(item.name) }}
-            </div>
-          </a>
-        </li>
-      </ul> -->
     </nav>
   </div>
 </template>

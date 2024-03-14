@@ -12,6 +12,7 @@ export default defineNuxtConfig({
   modules: [
     // pinia plugin
     "@pinia/nuxt",
+    'nuxt-icon',
     ["@nuxtjs/tailwindcss", { config: "@/tailwind.config.js" }],
   ],
 
