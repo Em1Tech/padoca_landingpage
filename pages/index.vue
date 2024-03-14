@@ -1,11 +1,11 @@
 <template>
-  <sections-main id="home"/>
-  <sections-aboutUs id="about-us" />
-  <!-- <sections-events /> -->
-  <sections-footer></sections-footer>
+  <div>
+    <SectionMain />
+    <div class="h-[300px]"></div> <!-- Temp -->
+    <SectionFooter />
+  </div>
 </template>
 
 <script>
-definePageMeta({ layout: "default" });
-export default {};
+export default {};   
 </script>
