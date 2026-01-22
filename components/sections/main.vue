@@ -35,7 +35,7 @@ export default defineComponent({
         {
           image: "/img/party.jpg",
           title: "ASK_FOR_PARTY",
-          link: "https://www.clienthall-food.com/ordering/restaurant/menu?company_uid=e61513d7-1ecd-475d-bced-4b552098ca3e&restaurant_uid=afabc151-10c9-4540-ad5c-7e11455cbf67",
+          link: "https://www.gloriafood.com/ordering/restaurant/menu?company_uid=e61513d7-1ecd-475d-bced-4b552098ca3e&restaurant_uid=afabc151-10c9-4540-ad5c-7e11455cbf67",
           comments: "CAKES_KITS"
         },
       ];
